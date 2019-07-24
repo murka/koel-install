@@ -19,7 +19,11 @@
 2. ```sudo apt-get install -y build-essential sudo dirmngr wget curl vim git```
 
 ### Create non-root user & add sudo access
-
+```
+adduser murka --gecos "Daniel Murka"
+usermod -aG sudo murka
+su - murka
+```
 ***NOTE:*** Replace ```murka``` with your username
 
 ### Setup timezone
@@ -109,7 +113,7 @@ sudo nginx -t
 ### Install NodeJS
 
 ```
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
 ```
 
