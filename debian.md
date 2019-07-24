@@ -19,7 +19,11 @@
 2. ```apt install -y build-essential sudo dirmngr wget curl vim git```
 
 ### Create non-root user & add sudo access
-
+```
+adduser murka --gecos "Daniel Murka"
+usermod -aG sudo murka
+su - murka
+```
 ***NOTE:*** Replace ```murka``` with your username
 
 ### Setup timezone
